@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:text="Please input a time interval between 1-60"/>
+  <EditText 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    local:MvxBind="Text TimeInterval"/>
+  <TextView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:text="Count Down:"/>
+  <TextView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    local:MvxBind="Text TimeProgress"/>
+  <TextView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:text="Current Time Hash:"/>
+  <TextView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    local:MvxBind="Text TimeHash"/>
+</LinearLayout>
